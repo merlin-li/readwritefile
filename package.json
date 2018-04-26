@@ -1,0 +1,25 @@
+{
+    "name": "readwritefile",
+    "version": "1.0.0",
+    "description": "read and write file",
+    "main": "index.js",
+    "directories": {
+        "test": "tests"
+    },
+    "dependencies": {
+        "chai": "^4.1.2"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "watch": "mocha --watch tests/",
+        "test": "mocha --reporter spec --timeout 2000 --recursive tests/",
+        "test-cov": "istanbul cover ./node_modules/mocha/bin/_mocha -- -t 2000 --recursive    -R spec tests/",
+        "test-html": "mocha --reporter mochawesome tests/"
+    },
+    "bin": {
+        "writeFile": "./bin/writeFile.js",
+        "readFile": "./bin/readFile.js"
+    },
+    "author": "merlin",
+    "license": "ISC"
+}
