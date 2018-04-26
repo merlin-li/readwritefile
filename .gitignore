@@ -1,1 +1,14 @@
+Thumbs.db
+Desktop.ini
+.DS_Store
 node_modules
+.idea/
+.gulp
+.vscode
+ftl_remote
+.temp
+*.temp
+npm-debug.log*
+.project
+.happypack
+.cache
